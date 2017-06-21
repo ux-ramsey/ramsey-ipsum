@@ -16,4 +16,3 @@ A: You must be a Ramsey Solutions employee to submit a new word. Slack suggestio
 
 Q: Can I help develop this plugin?
 A: Absolutely! Message Kristy S. for more info.
-# ramsey-ipsum
