@@ -1,4 +1,4 @@
-var loremText = "Speaking of core values sacred cow Smart coin Master Series dollar BHAG devo move the needle tour. QBQ momentum Storybrand forum post legacy envelope stewardship bus tracker homeschool gazelle ROI.";
+var loremText = "Speaking of core values sacred cow Smart coin Master Series dollar BHAG devo move the needle tour. QBQ momentum Storybrand forum post legacy envelope stewardship bus tracker homeschool gazelle ROI. Weekly report fob Conference budget summit hedgehog concept cash wheel of life coach non-Dave revenue culture dunk.";
 
 function fillLayers(layers) {
     var count = 0
@@ -6,7 +6,7 @@ function fillLayers(layers) {
         var layer = layers[i];
         if (layer.className() == "MSTextLayer") {
             [layer setStringValue:loremText];
-            [layer setName:"Lorem Ipsum"];
+            [layer setName:"Ramsey Ipsum"];
             count += 1;
         } else if (layer.className() == "MSLayerGroup")){
             count += fillLayer(layer.layers());
@@ -18,7 +18,7 @@ function fillLayers(layers) {
 function onRun(context) {
     var count = fillLayers(context.selection)
     if (count == 0) {
-        context.api().alert("Select a text object to replace it with the Ramsey Ipsum.", "Shiza Minnelli!");
+        context.api().alert("Please select some text objects.", "Oops!");
     } else {
         log("Filled: " + count);
     }
